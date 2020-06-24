@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <!-- GIVEN I am taking a code quiz -->
+        <h1>Coding Quiz Challenge</h1>
+        <div class="container">
+            <!-- WHEN I click the start button -->
+            <button id="Start">Start</button>
+        </div>
+        <!-- THEN a timer starts and I am presented with a question -->
+        <h2 class="Timer">Time: <span id="Time">0</span></h2>
+    </div>
+    <!-- WHEN I answer a question THEN I am presented with another question -->
+    <div id="getQuestions">
+        <div id="getChoices">
+
+        </div>
+    </div>
+    <!-- THEN the game is over -->
+    <h2>You're finished!</h2>
+
+    <!-- THEN I can save my initials and score -->
+    <p>Enter your initials: <input type="text" id="initials">
+        <button id="submit">Submit</button>
+    </p>
+
+    <script src="logic.js"></script>
+    <script src="questions.js"></script>
+
+</body>
+
+</html>
